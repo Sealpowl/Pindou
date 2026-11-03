@@ -55,15 +55,15 @@ td,th{padding:6px 4px;border-bottom:1px solid var(--ln);text-align:right}th{colo
 <div class="fab"><button class="f2" onclick="openRestock()">补货清单</button><button class="f1" onclick="openImport()">导入图纸</button></div>
 <div id="mask" onclick="closeSheet()"></div><div id="sheet"></div>
 <script>
-var H={A:"FBF5C6 FEFF8F FBF05C FFE53B FFD83C FFA14B FF9A3C FFD65A FF9B3D FF8D3A FFC37F FF9E6B FFB43B F2564A F7F28E FFF5A5 FFEA85 FFDD66 FFC63D FFD83E FFD87A FFE9A8 E9D3B0 F3E6A0 F8E8A6 FFD23F",
-B:"DFF28A 5BD94B 8CE06A 4DCB6C 2FBF57 2FA45F 1E9A70 29835A 2F6F4D B6E36A 3F8A4B 1F5A3C BFE08A 8DBE5C 3F5F3C CFEBB0 B9E3A8 5ED9A8 2CA882 BFE5C8 2E7C6A 1E5A5A 2A4A2C C9DE8E 5B7A42 3A4F2C 9CD3A6 6FB88A 1F9A6A C3E5B5 A6D6A0 7FB87A",
-C:"E4F7FF B5F0F5 6FE0F0 4FC3F7 3FA9E8 2F86D6 3D6FD1 2C5AA8 4A9DD6 6EC6E0 B9E8F5 2B7AA0 DDEFF7 B8D8EE 8FBBE0 DCE8F8 C5DBF2 5FA0C8 3C7FB5 BFD9EA 7FB0C8 4F8FA0 B5D3DC 9FC8D8 6FA8BE DBEAF0 E3F0F7 CFE3EE 8FBFD6",
-D:"C9CCF2 9AA2E8 5E73D6 2C3E9A B25FD6 9A4FC8 7A3FB5 DCC8F2 CBB0EA 4A2C8A E0D0F0 B8359C A02C8A 8A2C78 5A2C6A D7C9EE C4B2E6 7A5AB8 CDBBE8 A855D0 5A2A7A 3A3A8A 6A4A9A 4A3A7A 3A2A6A DCCFF0",
-E:"FFE1E6 FFC4D4 FFA3C0 FF7FA8 F2477A E02B63 D01F55 F7B7C9 E85A8A B5306A F8D5E0 D8A0C8 B070A0 F8D0D8 F5C2CC EFA9B8 F7C9D4 F0B5C5 F5D0D8 EBB5BF D9A0A8 C98A95 B87582 A8606F",
-F:"FF9A7A FF7F6A F7604F EE4A3F E53A3A D5303A C22A4A A8283A 8F2A34 8A4A2B 6B3A2E E8453E 8F3A32 D4766A 8A3030 F2A58F E8967F CF7B55 C9806A D9A394 C98F85 D4A9A0 C48F8A B87A78 A86A6A",
-G:"FFE3CC FFD6B3 F7C9A5 F2BC94 E8AA7F D98B4A C77A3F B56A3A A05A38 8F4A30 EFC9A3 DDB28A B5714A 9A5F40 7A4A33 5C3A2A E6CBAA D4B08A C29A74 A98060 8F6A4F",
-H:"FFFFFF F0F0F0 DCDCDC C8C8C8 B0B0B0 969696 111111 E4E4E4 D2D2D2 BEBEBE A8A8A8 8E8E8E 757575 5E5E5E 484848 1E1E1E E8E4E0 CFCAC4 B5AFA8 8F8A84 CFD3D6 AEB4B8 8A9094",
-M:"B8C4B0 8FA08A 6F8070 D8CFBF E6D5C0 D4B8A8 E8D0C8 C99A9A B98A80 DCC8D8 C8A8B8 A87890 D8B0B8 E8C0A8 D8A890"};
+var H={A:"FAF4C8 FFFFD5 FEFF8B FBED56 F4D738 FEAC4C FE8B4C FFDA45 FF995B F77C31 FFDD99 FE9F72 FFC365 FD543D FFF365 FFFF9F FFE36E FEBE7D FD7C72 FFD568 FFE395 F4F57D E6C9B7 F7F8A2 FFD67D FFC830",
+B:"E6EE31 63F347 9EF780 5DE035 35E352 65E2A6 3DAF80 1C9C4F 27523A 95D3C2 5D722A 166F41 CAEB7B ADE946 2E5132 C5ED9C 9BB13A E6EE49 24B88C C2F0CC 156A6B 0B3C43 303A21 EEFCA5 4E846D 8D7A35 CCE1AF 9EE5B9 C5E254 E2FCB1 B0E792 9CAB5A",
+C:"E8FFE7 A9F9FC A0E2FB 41CCFF 01ACEB 50AAF0 3677D2 0F54C0 324BCA 3EBCE2 28DDDE 1C334D CDE8FF D5FDFF 22C4C6 1557A8 04D1F6 1D3344 1887A2 176DAF BEDDFF 67B4BE C8E2FF 7CC4FF A9E5E5 3CAED8 D3DFFA BBCFED 34488E",
+D:"AEB4F2 858EDD 2F54AF 182A84 B843C5 AC7BDE 8854B3 E2D3FF D5B9F8 361851 B9BAE1 DE9AD4 B90095 8B279B 2F1F90 E3E1EE C4D4F6 A45EC7 D8C3D7 9C32B2 9A009B 333A95 EBDAFC 7786E5 494FC7 DFC2F8",
+E:"FDD3CC FEC0DF FFB7E7 E8649E F551A2 F13D74 C63478 FFDBE9 E970CC D33793 FCDDD2 F78FC3 B5006D FFD1BA F8C7C9 FFF3EB FFE2EA FFC7DB FEBAD5 D8C7D1 BD9DA1 B785A1 937A8D E1BCE8",
+F:"FD957B FC3D46 F74941 FC283C E7002F 943630 971937 BC0028 E2677A 8A4526 5A2121 FD4E6A F35744 FFA9AD D30022 FEC2A6 E69C79 D37C46 C1444A CD9391 F7B4C6 FDC0D0 F67E66 E698AA E54B4F",
+G:"FFE2CE FFC4AA F4C3A5 E1B383 EDB045 E99C17 9D5B3E 753832 E6B483 D98C39 E0C593 FFC890 B7714A 8D614C FCF9E0 F2D9BA 78524B FFE4CC E07935 A94023 B88558",
+H:"FDFBFF FEFFFF B6B1BA 89858C 48464E 2F2B2F 000000 E7D6DB EDEDED EEE9EA CECDD5 FFF5ED F5ECD2 CFD7D3 98A6A8 1D1414 F1EDED FFFDF0 F6EFE2 949FA3 FFFBE1 CACAD4 9A9D94",
+M:"BCC6B8 8AA386 697D80 E3D2BC D0CCAA B0A782 B4A497 B38281 A58767 C5B2BC 9F7594 644749 D19066 C77362 757D78"};
 var S=Object.keys(H),C={},inv={},cur="A",TH=200,UNIT=1000,DN=100,LOG=[];
 S.forEach(function(s){H[s].split(" ").forEach(function(h,i){var c=s+(i+1);C[c]="#"+h;inv[c]=1000})});
 try{var sv=localStorage.getItem("pd");if(sv){var o=JSON.parse(sv);for(var k in o.inv)if(k in inv)inv[k]=o.inv[k];TH=o.TH||TH;UNIT=o.UNIT||UNIT;DN=o.DN||DN;LOG=o.LOG||[]}}catch(e){}
@@ -102,7 +102,7 @@ function openImport(){
  sheet("<h3>导入图纸</h3><div class='hint'>只截图纸底部的色号和数量那一条，点下面按钮选图识别；也可以把手机提取的文字粘贴到文字框</div><button class='btn' onclick='picImg()'>📷 选图识别</button><input id='pic' type='file' accept='image/*' hidden onchange='onPic(this)'><textarea id='ta' style='margin-top:10px' placeholder='或粘贴文字：A20 109 A13 77 ...'></textarea><button class='btn g' onclick='parse2()'>解析文字</button><div id='pv'></div>");
 }
 function openSet(){
- sheet("<h3>设置</h3><div class='set'>低库存线（颗）<input id='s1' type='number' value='"+TH+"'></div><div class='set'>补货单位（颗）<input id='s2' type='number' value='"+UNIT+"'></div><div class='set'>减少单位（颗）<input id='s3' type='number' value='"+DN+"'></div><div class='hint'>长按列表里的 +/- 按钮可输入自定义数量。<br>版本：v2（分块识图）</div><button class='btn' onclick='saveSet()'>保存</button><button class='btn g' onclick='openLog()'>操作记录 / 撤销</button><button class='btn g' onclick='exportData()'>导出备份</button><button class='btn g' onclick='impClick()'>导入备份</button><input id='imp' type='file' accept='.json,application/json' hidden onchange='importData(this)'><button class='btn g' onclick='resetAll()'>全部重置为 1000</button>");
+ sheet("<h3>设置</h3><div class='set'>低库存线（颗）<input id='s1' type='number' value='"+TH+"'></div><div class='set'>补货单位（颗）<input id='s2' type='number' value='"+UNIT+"'></div><div class='set'>减少单位（颗）<input id='s3' type='number' value='"+DN+"'></div><div class='hint'>长按列表里的 +/- 按钮可输入自定义数量。<br>版本：v3（色卡已按 MARD 221 色 HEX 校正）</div><button class='btn' onclick='saveSet()'>保存</button><button class='btn g' onclick='openLog()'>操作记录 / 撤销</button><button class='btn g' onclick='exportData()'>导出备份</button><button class='btn g' onclick='impClick()'>导入备份</button><input id='imp' type='file' accept='.json,application/json' hidden onchange='importData(this)'><button class='btn g' onclick='resetAll()'>全部重置为 1000</button>");
 }
 var lpT,lpF=false;
 function tap(b){if(lpF){lpF=false;return}add(b.dataset.c,b.dataset.d>0?UNIT:-DN)}
